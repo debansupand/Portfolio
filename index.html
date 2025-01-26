@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="LogO.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <i class="fa-sharp-duotone fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-sharp-duotone fa-solid fa-bars" onclick="openmanu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>CSE[Data Science]</p>
+                <h1>Hi, I'm <span>Debansu Panda</span><br> From India</h1>
+            </div>
+        </div>
+    </div>
+<!-- -----------------About------------------ -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Col-1.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>As a third-year Data Science student at ITER Bhubaneswar, I am building a solid foundation in data analysis, machine learning, and artificial intelligence. My academic journey is complemented by hands-on experience in various projects, including game development, optimization of power consumption and pollution in manufacturing, and AI-driven maintenance bill optimization.</p>
+
+                <div class="tab-titles">
+                    <button class="tab-links active-link" onclick="opentab('Skills')">Skills</button>
+                    <button class="tab-links" onclick="opentab('Education')">Education</button>
+                    <button class="tab-links" onclick="opentab('Experience')">Experience</button>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Data Science</span><br>Making data-driven insights actionable</li>
+                        <li><span>Web development</span><br></li>
+                        <li><span>Machine learning</span><br>Developing models for accurate data predictions.Building models from complex data patterns.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2022-2026</span><br>CSE[Data Sciene]at ITER Bhubaneswar</li>
+                        <li><span>2023-2024</span><br>Machine Learning</li>
+                        <li><span>2020-2022</span><br>12th</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>July 2024-Present</span><br>Making data-driven insights actionable</li>
+                        <li><span>2023-Present</span><br>ML and AI Developer</li>
+                        <li><span>2024-Present</span><br>ML and AI Developer at Team Genesis.</li>
+                        <li><span>2020-2022</span><br>Etc</li>
+                    </ul>
+                </div>
+            </div>  
+         </div>
+    </div>
+</div> 
+<!-- ----------------Services------------- -->
+<div id="Services">
+    <div class="container">
+        <h1 class="sub-title">My projects</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-sharp-duotone fa-solid fa-code"></i>
+                <h2>ML-Machine Learning Algorithms</h2>
+                <p>I am working on ML projects including all the possible supervised and unsupervised algorthims</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-sharp-duotone fa-solid fa-crop-simple"></i>
+                <h2>DL-Deep Learning Architectue</h2>
+                <p>In deep learning, I focus on building neural networks utilizing CNNs and RNNs to extract and learn complex data patterns.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-sharp-duotone fa-solid fa-browser"></i>
+                <h2>Web Design</h2>
+                <p></p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------------------Portfolio------------ -->
+<div id="Portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-1.jpeg">
+                <div class="layer">
+                    <h3>Image generation</h3>
+                    <p>I used a GAN model to generate synthetic images of different building.</p>
+                    <a href="#"><i class="fa-sharp-duotone fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-2.jpeg">
+                <div class="layer">
+                    <h3>Image generation</h3>
+                    <p>I used a GAN model to generate synthetic images of different building.</p>
+                    <a href="#"><i class="fa-sharp-duotone fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-3.jpeg">
+                <div class="layer">
+                    <h3>Image generation</h3>
+                    <p>I used a GAN model to generate synthetic images of different building.</p>
+                    <a href="#"><i class="fa-sharp-duotone fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!-- ------------------Contact---------------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp-duotone fa-solid fa-paper-plane"></i>debansupanda@gmail.com</p>
+                <p><i class="fa-sharp-duotone fa-solid fa-square-phone"></i>8458004035</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square-f"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram-f"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin-f"></i></a>
+                </div>
+                <a href="DebansuPanda.docx" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p></p>
+    </div>
+ </div>
+<script src="script.js"></script>
+<!-- <script>
+    var sidemenu  = 
+</script> -->
+</body>
+</html>
